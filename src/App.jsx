@@ -199,7 +199,7 @@ function BrownClawSide() {
       alt="claw"
       onError={() => setSrc('/brownclaw.png')}
       initial={{ x: 0, opacity: 0, rotate: 0 }}
-      animate={show ? { x: -100, opacity: 1, rotate: 90 } : { x: 0, opacity: 0, rotate: 0 }}
+      animate={show ? { x: -500, opacity: 1, rotate: 90 } : { x: 0, opacity: 0, rotate: 0 }}
       transition={{ 
         duration: 2,
         ease: [0.16, 1, 0.3, 1],
