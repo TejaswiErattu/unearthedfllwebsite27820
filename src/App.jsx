@@ -578,20 +578,50 @@ function TeamFun() {
 function Awards() {
   const activities = [
     {
-      title: "Championship Finalist",
-      desc: "First Dive Championship Finalist",
-      photo: "/teamfungroup.jpg",
-      date: "2024 - 2025"
+      title: "Champion's Award — Trophies",
+      desc: "FIRST LEGO League Challenge Unearthed Champion's Award Winner — the highest team honor in FLL!",
+      photo: "/awards-trophies.jpeg",
+      date: "2025 - 2026"
+    },
+    {
+      title: "Qualifier Round",
+      desc: "Strong performance at the Qualifier round, advancing to the next stage.",
+      photo: "/qualifier.jpeg",
+      date: "2025 - 2026"
+    },
+    {
+      title: "State Championship",
+      desc: "Competed and excelled at the Washington State Championship.",
+      photo: "/state1.jpeg",
+      date: "2025 - 2026"
+    },
+    {
+      title: "State Champions",
+      desc: "State Championship celebration — another milestone for the Unearthed Dinos!",
+      photo: "/state2.jpeg",
+      date: "2025 - 2026"
+    },
+    {
+      title: "Semifinals",
+      desc: "Advanced to Semifinals, showcasing teamwork and innovation on a bigger stage.",
+      photo: "/semifinals.jpeg",
+      date: "2025 - 2026"
     },
     {
       title: "Robot Design Winner",
-      desc: "First Dive Robot Design Winner",
+      desc: "First Dive Robot Design Winner.",
       photo: "/awards.jpg",
       date: "2024 - 2025"
     },
     {
-      title: "Championship Finalist",
-      desc: "MasterPiece Championship Finialist and Core Values Award Winner",
+      title: "First Dive Championship Finalist",
+      desc: "First Dive Championship Finalist.",
+      photo: "/teamfungroup.jpg",
+      date: "2024 - 2025"
+    },
+    {
+      title: "MasterPiece Championship Finalist",
+      desc: "MasterPiece Championship Finalist and Core Values Award Winner.",
       photo: "/takingaward.JPG",
       date: "2023 - 2024"
     }
@@ -601,11 +631,11 @@ function Awards() {
     <section id="awards" className="max-w-7xl mx-auto px-4 py-20">
       <h2 className="text-3xl md:text-4xl font-bold text-amber-200">Awards</h2>
       <p className="mt-4 text-[#DCC7A1] max-w-2xl">
-        Building robots is fun, but building friendships is even better! Here's how we bond as a team.
+        A showcase of the trophies, medals, and milestones we've earned across multiple FLL seasons.
       </p>
       <div className="mt-8 grid md:grid-cols-3 gap-5">
-        {activities.map((activity) => (
-          <div key={activity.title} className={`${palette.card} p-5 rounded-2xl border border-[#4a3a2e]`}>
+        {activities.map((activity, idx) => (
+          <div key={idx} className={`${palette.card} p-5 rounded-2xl border border-[#4a3a2e]`}>
             <PictureSlot 
               src={activity.photo} 
               alt={activity.title} 
